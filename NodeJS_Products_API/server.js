@@ -72,7 +72,7 @@ app.delete('/products/:id', async(req,res)=>{
     }
 })
 
-mongoose.connect("mongodb+srv://jigjug:12345jig@cluster0.z3pyfwe.mongodb.net/Node-API?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://<user>:<password>@cluster0.z3pyfwe.mongodb.net/Node-API?retryWrites=true&w=majority")
 .then(()=>{
     app.listen(PORT, ()=>{
         console.log(`node api is running on ${PORT}`)
